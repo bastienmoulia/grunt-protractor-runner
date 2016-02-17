@@ -22,8 +22,8 @@ module.exports = function(grunt) {
     var protractorMainPath = require.resolve('protractor');
     // '.../node_modules/protractor/bin/protractor'
     var protractorBinPath = path.resolve(protractorMainPath, '../../bin/protractor');
-    // '.../node_modules/protractor/referenceConf.js'
-    var protractorRefConfPath = path.resolve(protractorMainPath, '../../referenceConf.js');
+    // '.../node_modules/protractor/example/conf.js'
+    var protractorRefConfPath = path.resolve(protractorMainPath, '../../example/conf.js');
     // '.../node_modules/protractor/bin/webdriver-manager'
     var webdriverManagerPath = path.resolve(protractorMainPath, '../../bin/webdriver-manager');
 

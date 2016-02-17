@@ -60,7 +60,7 @@ grunt.initConfig({
 
 #### options.configFile
 Type: `String`
-Default value: `node_modules/protractor/referenceConf.js` relative to where protractor module is installed.
+Default value: `node_modules/protractor/example/conf.js` relative to where protractor module is installed.
 
 A protractor config file.
 
@@ -167,10 +167,11 @@ You need to install/update selenium webdriver for protractor.
 
 ## Release History
 
+* 3.1.0
+  * Update protractor to version 3.1 (#144)
 * 3.0.0
   * Update protractor to version 3
   * Update other dependencies including through2 and split to latest version
-
 * 2.1.2
   * Fix boolean parameters in object.args.params (#130)
   * Modify unit tests to run nodeunit test faster and after protractor task
@@ -184,7 +185,6 @@ You need to install/update selenium webdriver for protractor.
   * `chromeOnly` in `options.args` is deprecated. Replaced by `directConnect` (#114)
   * Support `beforeLaunch` and `onPrepare` in `options.args` (#110)
   * When one of the tests fails, throw warning instead of fatal error so that grunt can still use --force to continue. (#103)
-
 * 1.2.1
   * Move `split` and `through2` from devDependencies to dependencies (#104)
 * 1.2.0
@@ -211,7 +211,6 @@ You need to install/update selenium webdriver for protractor.
   * Fixed argsTest
 * 1.0.0
   * Change default value of `options.keepAlive` to false (#50)
-
 * 0.2.5
   * Support --mochaOpts, --suite and --exclude in options.args (#52, #53, #57)
 * 0.2.4
